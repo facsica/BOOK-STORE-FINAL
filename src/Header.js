@@ -20,7 +20,7 @@ function Header() {
       <Link to="/">
         <img
           className="header__logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="https://api-server.chulabookcourse.com/uploads/1598606417399-Logo_Chula.png"
         />
       </Link>
 
