@@ -20,6 +20,7 @@ function Order({ order }) {
                     price={item.price}
                     rating={item.rating}
                     hideButton
+                    
                 />
             ))}
             <CurrencyFormat

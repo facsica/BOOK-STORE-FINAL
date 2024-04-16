@@ -37,7 +37,6 @@ function Product({ id, title, image, price, rating }) {
       </div>
 
       <img src={image} alt="" />
-
       <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
