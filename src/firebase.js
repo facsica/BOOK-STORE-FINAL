@@ -1,15 +1,16 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCcPSKlYtpdzBoAC8soeSmIARMzVKzrf5I",
-  authDomain: "challenge-4b2b2.firebaseapp.com",
-  databaseURL: "https://challenge-4b2b2.firebaseio.com",
-  projectId: "challenge-4b2b2",
-  storageBucket: "challenge-4b2b2.appspot.com",
-  messagingSenderId: "962418448875",
-  appId: "1:962418448875:web:f6cce5eeaf819481f661ae",
+  apiKey: "AIzaSyAhOD4HbED1PisoOhy2LJNowgHYhZpRITw",
+  authDomain: "e-book-store-db.firebaseapp.com",
+  projectId: "e-book-store-db",
+  storageBucket: "e-book-store-db.appspot.com",
+  messagingSenderId: "225931014364",
+  appId: "1:225931014364:web:d39990c91aaf1cbe188419",
+  measurementId: "G-3SL6BFCQ2E"
 };
 
+// Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
