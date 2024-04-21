@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book store</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <header>
+        
+        <nav class="navbar">
+
+            <!-- first box  -->
+            <div class="nav-logo border">
+                <div class="logo "></div>
+            </div>
+
+            <!-- second box  -->
+            <div class="nav-address border mobile-hidden">
+                <p class="add-content-first">Deliver to</p>
+
+                <div class="add-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="location">Your place</p>
+                </div>
+            </div>
+
+            <!-- .third-box -->
+            <div class="search-box">
+                <div class="select-box">
+                    <select>
+                        <option value="All">All</option>
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="Search ">
+                </div>
+
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <!-- fourth-box -->
+            <div class="language-box border  mobile-hidden">
+                <div class="country">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ธงชาติไทย.png">
+                </div>
+
+                <div class="language">
+                    <p>TH</p>
+                    <img src="./images/down-arrow.png">
+                </div>
+            </div>
+
+            <!-- fifth box -->
+            <div class="account-box nav-same-format border mobile-hidden" onclick="location.href='Login.html';">
+                <p><span>Hello, sign in</span></p>
+                <p>Account & Lists <img src="./images/down-arrow.png"></p>
+            </div>
+            
+
+            <!-- sixth-box  -->
+            <div class="return-box nav-same-format border mobile-hidden">
+                <p><span>Returns</span></p>
+                <p>& Orders</p>
+            </div>
+
+            <!-- cart box  -->
+            <div class="cart-box border">
+                <span class="total-item">0</span>
+                <img src="src/images/cart.png">
+                <p>Cart</p>
+            </div>
+        </nav>
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-links">
+                <a href="#" class="border">Today's Deals</a>
+                <a href="#" class="border">Customer Service</a>
+                <a href="#" class="border mobile-hidden">Registry</a>
+                <a href="#" class="border">Gift Cards</a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main part start  -->
+
+    <main>
+        <!-- hero section  -->
+        <div class="hero-section">
+            <div class="hero-image">
+                <div class="prev-icon mobile-hidden">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <img src="https://www.ktc.co.th/pub/media/Promotion/Book/publishing/bookbestbuy/2023/AUG23-260-Book-Best-Buy-2023-CU-promo.webp">
+
+                <div class="next-icon mobile-hidden">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <div class="shopping-category">
+                <div class="row">
+                    <div class="col">
+                        <h2>Best seller</h2>
+                        <div class="gallery-four-image">
+                            <div>
+                                <img src="https://bci.kinokuniya.com/th/jsp/images/book-img/97814/97814088/9781408855652.JPG">
+                                <p>Harry Potter and the Sorcerer's Stone</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            <div>
+                                <img src="images/Animalf.jpeg">
+                                <p>The Lord of the Rings</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            <div>
+                                <img src="images/Animalf.jpeg">
+                                <p>Animal Farm</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                            <div>
+                                <img src="./images/ToKillaMockingbird.jpeg">
+                                <p>To Kill a Mockingbird</p>
+                                <button class="add-to-cart-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                        <p><a href="#">See more</a></p>
+                    </div>
+
+                </div> </div>
+                <!-- catagory  -->  
+                <div class="catagory"></div>
+                    <div class="col">
+                        <h2>Category</h2>
+                        <div class="gallery-four-image">
+                            <div><img src="images/Animalf.jpeg">
+                                <p>Children's</p>
+                            </div>
+                            <div><img src="images/Animalf.jpeg">
+                                <p>Comic book</p>
+                            </div>
+                            <div><img src="images/Animalf.jpeg">
+                                <p>Novel</p>
+                            </div>
+                            <div><img src="images/Animalf.jpeg">
+                                <p>Guide</p>
+                            </div>
+                        </div>
+                        <p><a href="#">See more</a></p>
+                    </div>
+                </div> </div>
+
+                 
+           <!-- end catagory  -->     
+
+        <!-- new arrivals products  -->
+        <div class="carousel-section popular-beauty-product-section">
+            <div class="carousel">
+                <h3>New arrivals!!</h3>
+                <div class="items">
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src=".images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div>
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+         
+        
+        </div>
+
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="deal-carousel">
+            <div class="heading">
+                <h3>Exciting deals</h3>
+                <a href="#">See all deals</a>
+            </div>
+            <div class="row">
+                <!-- Example of one column; repeat similar modifications for others -->
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="col">
+                    <div class="img">
+                        <img src="images/ToKillaMockingbird.jpeg">
+                    </div>
+                    <div class="discount">
+                        <p>17% off</p>
+                        <span>Deal</span>
+                    </div>
+                    <div class="price">
+                        <p class="new-price"><span>$</span>10.86</p>
+                        <span>List Price: <span class="old-price">$15.00</span></span>
+                    </div>
+                    <p class="item-name">B1 Sunset by the Beachwaver Co.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="deal-carousel">
+
+    
+    
+            </div>
+        </div>
+        
+
+    <!-- footer start  -->
+
+    <footer>
+        <section class="signin-section">
+            <p>See personalized recommendations</p>
+            <button>Sign in</button>
+            <p>New customer?<a href="#">Start here.</a></p>
+        </section>
+
+        <section class="back-top">
+            <p>Back to top</p>
+        </section>
+
+        <section class="footer-first-shortcut-links">
+
+            <div>
+                <p>Get to Know Us</p>
+
+                <div class="links">
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Investor Relations</a>
+                   
+                </div>
+            </div>
+
+            <div>
+                <p>Make Money with Us</p>
+
+                <div class="links">
+                   
+                    <a href="#">Become an Affiliate</a>
+                    <a href="#">Advertise Your Products</a>
+                    <a href="#">Self-Publish with Us</a>
+                
+                    <a href="#"><i class="fa-solid fa-caret-right"></i>See More Make Money <br> with Us</a>
+                </div>
+            </div>
+
+            <div>
+                <p>Book store Payment Products</p>
+
+                <div class="links">
+                    <a href="#">Book store Business Card</a>
+                    <a href="#">Shop with Points</a>
+                    <a href="#">About website</a>
+                    <a href="#">Reload Your Balance</a>
+                   
+                </div>
+            </div>
+            <div>
+                <p>Let Us Help You</p>
+
+                <div class="links">
+                    
+                    <a href="#">Your Account</a>
+                    <a href="#">Your Orders</a>
+                    <a href="#">Shipping Rates & <br>Policies</a>
+                    <a href="#">Returns & <br>Replacements</a>
+                    <a href="#">Manage Your <br> Content and Devices</a>
+                   
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-middle-section">
+            <div class="items">
+                <div class="footer-logo">
+                    <img src="https://api-server.chulabookcourse.com/uploads/1598606417399-Logo_Chula.png">
+                </div>
+
+                <div class="btns">
+                    <button>
+                        <i class="fa-solid fa-globe"></i>
+                        <p>English</p>
+                    </button>
+
+                    <button>
+                        <span>$</span>
+                        <p>USD - U.S. Dollar</p>
+                    </button>
+
+                    <button>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ธงชาติไทย.png">
+                        <p>Thailand</p>
+                    </button>
+                </div>
+            </div>
+   
+
+        
+<script>
+  document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        var currentCount = parseInt(localStorage.getItem('cartCount') || '0');
+        localStorage.setItem('cartCount', currentCount + 1);
+        document.querySelector('.total-item').textContent = currentCount + 1;
+    });
+});
+
+  
+</script>
+<script src="cart-functions.js"></script>
+
+
+</body>
+
+</html>

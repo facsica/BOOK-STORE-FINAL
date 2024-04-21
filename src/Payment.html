@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Payment.css">
+    <title>Payment Page</title>
+</head>
+<header>
+        
+    <nav class="navbar">
+
+        <!-- first box  -->
+        <div class="nav-logo border">
+            <div class="logo "></div>
+        </div>
+
+        <!-- second box  -->
+        <div class="nav-address border mobile-hidden">
+            <p class="add-content-first">Deliver to</p>
+
+            <div class="add-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="location">Your place</p>
+            </div>
+        </div>
+
+        <!-- .third-box -->
+        <div class="search-box">
+            <div class="select-box">
+                <select>
+                    <option value="All">All</option>
+                </select>
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="Search ">
+            </div>
+
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- fourth-box -->
+        <div class="language-box border  mobile-hidden">
+            <div class="country">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ธงชาติไทย.png">
+            </div>
+
+            <div class="language">
+                <p>TH</p>
+                <img src="./images/down-arrow.png">
+            </div>
+        </div>
+
+        <!-- fifth box -->
+        <div class="account-box nav-same-format border mobile-hidden" onclick="location.href='Login.html';">
+            <p><span>Hello, sign in</span></p>
+            <p>Account & Lists <img src="./images/down-arrow.png"></p>
+        </div>
+        
+
+        <!-- sixth-box  -->
+        <div class="return-box nav-same-format border mobile-hidden">
+            <p><span>Returns</span></p>
+            <p>& Orders</p>
+        </div>
+
+        <!-- cart box  -->
+        <div class="cart-box border">
+            <span class="total-item">0</span>
+            <img src="src/images/cart.png">
+            <p>Cart</p>
+        </div>
+    </nav>
+
+    <div class="panel">
+        <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+        <div class="panel-links">
+            <a href="#" class="border">Today's Deals</a>
+            <a href="#" class="border">Customer Service</a>
+            <a href="#" class="border mobile-hidden">Registry</a>
+            <a href="#" class="border">Gift Cards</a>
+
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <div class="payment">
+        <div class="payment_container">
+            <h1>Checkout (<Link to="/checkout">modify your basket</Link>)</h1>
+            <div class="payment_section">
+                <div class="payment_title">
+                    <h3>Delivery Address</h3>
+                </div>
+                <div class="payment_address">
+                    <p>{user?.email}</p>
+                    <p>123 React Lane</p>
+                    <p>Los Angeles, CA</p>
+                </div>
+            </div>
+            <div class="payment_section">
+                <div class="payment_title">
+                    <h3>Review Items and Delivery</h3>
+                </div>
+                <div class="payment_items">
+                    <!-- Products will be listed here -->
+                </div>
+            </div>
+            <div class="payment_section">
+                <div class="payment_title">
+                    <h3>Payment Method</h3>
+                </div>
+                <div class="payment_details">
+                    <!-- Stripe Magic Will Happen Here -->
+                    <form>
+                        <CardElement />
+                        <button type="submit">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="paymentHandling.js"></script>
+    <script src="cart-functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CheckoutProduct.css">
+    <title>Checkout Product</title>
+    <script>
+        function removeFromBasket(productId) {
+            console.log("Product removed:", productId);
+            // Add logic here to actually remove product from storage or state
+        }
+    </script>
+</head>
+<header>
+        
+    <nav class="navbar">
+
+        <!-- first box  -->
+        <div class="nav-logo border">
+            <div class="logo "></div>
+        </div>
+
+        <!-- second box  -->
+        <div class="nav-address border mobile-hidden">
+            <p class="add-content-first">Deliver to</p>
+
+            <div class="add-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="location">Your place</p>
+            </div>
+        </div>
+
+        <!-- .third-box -->
+        <div class="search-box">
+            <div class="select-box">
+                <select>
+                    <option value="All">All</option>
+                </select>
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="Search ">
+            </div>
+
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- fourth-box -->
+        <div class="language-box border  mobile-hidden">
+            <div class="country">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ธงชาติไทย.png">
+            </div>
+
+            <div class="language">
+                <p>TH</p>
+                <img src="./images/down-arrow.png">
+            </div>
+        </div>
+
+        <!-- fifth box -->
+        <div class="account-box nav-same-format border mobile-hidden" onclick="location.href='Login.html';">
+            <p><span>Hello, sign in</span></p>
+            <p>Account & Lists <img src="./images/down-arrow.png"></p>
+        </div>
+        
+
+        <!-- sixth-box  -->
+        <div class="return-box nav-same-format border mobile-hidden">
+            <p><span>Returns</span></p>
+            <p>& Orders</p>
+        </div>
+
+        <!-- cart box  -->
+        <div class="cart-box border">
+            <span class="total-item">0</span>
+            <img src="src/images/cart.png">
+            <p>Cart</p>
+        </div>
+    </nav>
+
+    <div class="panel">
+        <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+        <div class="panel-links">
+            <a href="#" class="border">Today's Deals</a>
+            <a href="#" class="border">Customer Service</a>
+            <a href="#" class="border mobile-hidden">Registry</a>
+            <a href="#" class="border">Gift Cards</a>
+
+        </div>
+    </div>
+</header>
+
+
+<body>
+    <div class="checkoutProduct">
+        <img class="checkoutProduct_image" src="path_to_image.jpg" alt="Product Image">
+        <div class="checkoutProduct_info">
+            <p class="checkoutProduct_title">Product Title</p>
+            <p class="checkoutProduct_price">$19.99</p>
+            <div class="checkoutProduct_rating">
+                <!-- Display star ratings here -->
+                ★★★★☆
+            </div>
+            <button onClick="removeFromBasket('product_id')">Remove from Basket</button>
+        </div>
+    </div>
+    <script src="cart-functions.js"></script>
+</body>
+</html>

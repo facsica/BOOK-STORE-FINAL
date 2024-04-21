@@ -1,0 +1,34 @@
+<script>
+// โครงสร้างของ state ที่คล้ายกับ Redux
+var state = {
+    basket: [],
+};
+
+// ตัวจัดการ action เพิ่มสินค้าเข้าตะกร้า
+function addToBasket(product) {
+    state.basket.push(product);
+    updateBasketUI();
+}
+
+// อัพเดท UI เมื่อตะกร้ามีการเปลี่ยนแปลง
+function updateBasketUI() {
+    var basketUI = document.getElementById('basket');
+    basketUI.innerHTML = ''; // ล้างสินค้าที่แสดงอยู่
+    state.basket.forEach(function(item) {
+        var itemElement = document.createElement('div');
+        itemElement.textContent = item.title + " - $" + item.price;
+        basketUI.appendChild(itemElement);
+    });
+}
+
+// ตัวอย่างสินค้า
+var exampleProduct = { title: 'Sample Product', price: 19.99 };
+
+// การเพิ่มสินค้าตัวอย่างเข้าตะกร้า
+document.getElementById('addProduct').addEventListener('click', function() {
+    addToBasket(exampleProduct);
+});
+</script>
+
+<div id="basket"></div>
+<button id="addProduct">Add Product to Basket</button>

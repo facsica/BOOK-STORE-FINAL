@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Orders.css">
+    <title>Orders Page</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadOrders();
+        });
+
+        function loadOrders() {
+            // Mock function to simulate fetching orders from a database
+            const orders = [
+                { id: 1, product: 'Product 1', amount: 3, price: 29.99 },
+                { id: 2, product: 'Product 2', amount: 1, price: 15.99 }
+            ];
+            displayOrders(orders);
+        }
+
+        function displayOrders(orders) {
+            const ordersContainer = document.getElementById('orders-container');
+            orders.forEach(order => {
+                const orderElement = document.createElement('div');
+                orderElement.className = 'order';
+                orderElement.innerHTML = `<strong>${order.product}</strong> x ${order.amount} - $${order.price.toFixed(2)}`;
+                ordersContainer.appendChild(orderElement);
+            });
+        }
+    </script>
+</head>
+<header>
+        
+    <nav class="navbar">
+
+        <!-- first box  -->
+        <div class="nav-logo border">
+            <div class="logo "></div>
+        </div>
+
+        <!-- second box  -->
+        <div class="nav-address border mobile-hidden">
+            <p class="add-content-first">Deliver to</p>
+
+            <div class="add-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="location">Your place</p>
+            </div>
+        </div>
+
+        <!-- .third-box -->
+        <div class="search-box">
+            <div class="select-box">
+                <select>
+                    <option value="All">All</option>
+                </select>
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="Search ">
+            </div>
+
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- fourth-box -->
+        <div class="language-box border  mobile-hidden">
+            <div class="country">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ธงชาติไทย.png">
+            </div>
+
+            <div class="language">
+                <p>TH</p>
+                <img src="./images/down-arrow.png">
+            </div>
+        </div>
+
+        <!-- fifth box -->
+        <div class="account-box nav-same-format border mobile-hidden" onclick="location.href='Login.html';">
+            <p><span>Hello, sign in</span></p>
+            <p>Account & Lists <img src="./images/down-arrow.png"></p>
+        </div>
+        
+
+        <!-- sixth-box  -->
+        <div class="return-box nav-same-format border mobile-hidden">
+            <p><span>Returns</span></p>
+            <p>& Orders</p>
+        </div>
+
+        <!-- cart box  -->
+        <div class="cart-box border">
+            <span class="total-item">0</span>
+            <img src="src/images/cart.png">
+            <p>Cart</p>
+        </div>
+    </nav>
+
+    <div class="panel">
+        <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+        <div class="panel-links">
+            <a href="#" class="border">Today's Deals</a>
+            <a href="#" class="border">Customer Service</a>
+            <a href="#" class="border mobile-hidden">Registry</a>
+            <a href="#" class="border">Gift Cards</a>
+
+        </div>
+    </div>
+</header>
+<script src="cart-functions.js"></script>
+
+<body>
+    <div id="orders-container"></div>
+</body>
+</html>
