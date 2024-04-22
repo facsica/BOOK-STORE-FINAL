@@ -1,133 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Payment.css">
-    <title>Payment Page</title>
+    <title>Book store</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="Payment.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
-<header>
-        
-    <nav class="navbar">
-
-        <!-- first box  -->
-        <div class="nav-logo border">
-            <div class="logo "></div>
-        </div>
-
-        <!-- second box  -->
-        <div class="nav-address border mobile-hidden">
-            <p class="add-content-first">Deliver to</p>
-
-            <div class="add-location">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="location">Your place</p>
-            </div>
-        </div>
-
-        <!-- .third-box -->
-        <div class="search-box">
-            <div class="select-box">
-                <select>
-                    <option value="All">All</option>
-                </select>
-            </div>
-            <div class="search-input">
-                <input type="text" placeholder="Search ">
-            </div>
-
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-
-        <!-- fourth-box -->
-        <div class="language-box border  mobile-hidden">
-            <div class="country">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ธงชาติไทย.png">
-            </div>
-
-            <div class="language">
-                <p>TH</p>
-                <img src="./images/down-arrow.png">
-            </div>
-        </div>
-
-        <!-- fifth box -->
-        <div class="account-box nav-same-format border mobile-hidden" onclick="location.href='Login.html';">
-            <p><span>Hello, sign in</span></p>
-            <p>Account & Lists <img src="./images/down-arrow.png"></p>
-        </div>
-        
-
-        <!-- sixth-box  -->
-        <div class="return-box nav-same-format border mobile-hidden">
-            <p><span>Returns</span></p>
-            <p>& Orders</p>
-        </div>
-
-        <!-- cart box  -->
-        <div class="cart-box border">
-            <span class="total-item">0</span>
-            <img src="src/images/cart.png">
-            <p>Cart</p>
-        </div>
-    </nav>
-
-    <div class="panel">
-        <div class="panel-all border">
-            <i class="fa-solid fa-bars"></i>
-            All
-        </div>
-
-        <div class="panel-links">
-            <a href="#" class="border">Today's Deals</a>
-            <a href="#" class="border">Customer Service</a>
-            <a href="#" class="border mobile-hidden">Registry</a>
-            <a href="#" class="border">Gift Cards</a>
-
-        </div>
-    </div>
-</header>
-
 
 <body>
-    <div class="payment">
-        <div class="payment_container">
-            <h1>Checkout (<Link to="/checkout">modify your basket</Link>)</h1>
-            <div class="payment_section">
-                <div class="payment_title">
-                    <h3>Delivery Address</h3>
-                </div>
-                <div class="payment_address">
-                    <p>{user?.email}</p>
-                    <p>123 React Lane</p>
-                    <p>Los Angeles, CA</p>
-                </div>
+
+    <!-- header section starts  -->
+    
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"> <i class="fas fa-book"></i> Book Store</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="Checkout.html" class="fas fa-shopping-cart"></a>
+                <span class="total-item">0</span>
+                <div id="login-btn" class="fas fa-user"></div>
             </div>
-            <div class="payment_section">
-                <div class="payment_title">
-                    <h3>Review Items and Delivery</h3>
-                </div>
-                <div class="payment_items">
-                    <!-- Products will be listed here -->
-                </div>
+            
+        </nav>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="html.html">home</a>
+                <a href="html1.html">best-seller</a>
+                <a href="#arrivals">arrivals</a>
+                <a href='html2.html' alt='Broken links'>genres</a>
+
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+        <a href="html.html" class="fas fa-home"></a>
+        <a href="html1.html" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        
+
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
             </div>
-            <div class="payment_section">
-                <div class="payment_title">
-                    <h3>Payment Method</h3>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+
+    </div>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="checkout-image">
+               
+            </div>
+            <div class="checkout-text">
+    
+                <div class="back-to-home">
+                    <a href="html1.html">Back to shopping</a>
+                    <img src="https://img.icons8.com/sf-regular/48/aaaaaa/forward.png" alt="Arrow" height="15px" width="15px" />
+                    <a href="">Payment</a>
                 </div>
-                <div class="payment_details">
-                    <!-- Stripe Magic Will Happen Here -->
-                    <form>
-                        <CardElement />
-                        <button type="submit">Buy Now</button>
-                    </form>
+
+                <div class="pay-button">
+                    <button>
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/mac-os.png" alt="Apple-Pay" height="20px" width="20px" />
+                        <span>Pay</span>
+                    </button>
                 </div>
+
+            
+    
+                <div class="card-details">
+                    <label>Card details</label>
+                    <div class="card-number">
+                        <input type="number" placeholder="4242 4242 4242 4242" />
+                        <div>
+                            <img src="https://img.icons8.com/color/48/000000/visa.png" height="20px" width="20px" />
+                            <img src="https://img.icons8.com/color/48/000000/mastercard.png" height="20px" width="20px" />
+                            <img src="https://img.icons8.com/color/48/000000/amex.png" height="20px" width="20px" />
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="mm-yy">
+                            <input type="number" placeholder="MM / YY" />
+                        </div>
+                        <div class="cvc">
+                            <input type="number" placeholder="CVC" />
+                            <img src="https://img.icons8.com/ios/50/000000/card-verification-value.png" height="20px" width="20px" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="owner-name">
+                    <label>Owner name</label>
+                    <input type="text" placeholder="John Doe" />
+                </div>
+    
+                <div class="country-region">
+                    <label>Country or region</label>
+                    <select>
+                        <option>Thailand</option>
+                        <option>USA</option>
+                        <option>China</option>
+                    </select>
+                    <input type="number" placeholder="Zip code" />
+                </div>
+    
+                <button class="buy-button">Pay 0$</button>
+    
             </div>
         </div>
-    </div>
-    <script src="paymentHandling.js"></script>
+    
     <script src="cart-functions.js"></script>
 </body>
 </html>

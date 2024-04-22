@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: error.html");
         exit();
     } else {
-        // ถ้าพบผู้ใช้ ให้เด้งไปยังหน้า main.html
+        // ถ้าพบผู้ใช้ ให้เด้งไปยังหน้า html1.html
         header("Location: success.html");
         exit();
     }

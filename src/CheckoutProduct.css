@@ -1,0 +1,45 @@
+/*Main*/
+
+.checkoutProduct {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* เพิ่มเส้นขอบด้านล่างระหว่างสินค้า */
+    padding-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของสินค้า */
+}
+
+.checkoutProduct_info {
+    padding-left: 20px;
+}
+
+.checkoutProduct_info > button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #574b2a #9c7e31 #846a29;
+    color: #111;
+    padding: 8px 16px; /* เพิ่มระยะห่างของปุ่ม */
+    cursor: pointer; /* เปลี่ยน cursor เป็น pointer เมื่อเม้าส์ชี้ที่ปุ่ม */
+    transition: background-color 0.3s ease; /* เพิ่มอนิเมชันเมื่อ hover ที่ปุ่ม */
+}
+
+.checkoutProduct_info > button:hover {
+    background-color: #d4ac0d; /* เปลี่ยนสีพื้นหลังเมื่อ hover ที่ปุ่ม */
+}
+
+.checkoutProduct_image {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+    margin-right: 20px; /* เพิ่มระยะห่างด้านขวาของรูปภาพ */
+}
+
+.checkoutProduct_rating {
+    display: flex;
+}
+
+.checkoutProduct_title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #333; /* เปลี่ยนสีข้อความเป็นสีเข้ม */
+}
