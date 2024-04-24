@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="cart-functions.js"></script>
     <title>Genres</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <style>
@@ -52,16 +51,16 @@
                 <label for="search-box" class="fas fa-search"></label>
             </form>
 
+            
             <div class="icons">
                 <div id="search-btn" class="fas fa-search"></div>
                 <a href="#" class="fas fa-heart"></a>
                 <a href="Checkout.html" class="fas fa-shopping-cart"></a>
                 <span class="total-item">0</span>
                 <a href="login.html" id="login-link" class="fas fa-user">
-                <div id="login-btn"></div>
-                </a>
+                    <div id="login-btn"></div>
+                    </a>
             </div>
-
         </div>
 
         <div class="header-2">
@@ -74,6 +73,29 @@
             </nav>
         </div>
 
+    </header>
+    <!-- login form  -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+
+    </div>
 
 
     <div class="nje">
@@ -97,12 +119,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg">
+                        <img src="it.jpg">
                     </div>
                     <div class="content">
                         <h3>It</h3>
                         <div class="price">$17.99 <span>$20.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -112,12 +135,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="it.jpg" alt="">
+                        <img src="mexican_gothic.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Mexican gothic</h3>
                         <div class="price">$12.99 <span>$18.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -127,33 +151,17 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="it.jpg" alt="">
+                        <img src="white_is_for_witching.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>White is for</h3>
                         <div class="price">$13.99 <span>$19.99</span></div>
-            <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
 
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="it.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>A head full </h3>
-                        <div class="price">$16.99 <span>$21.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
-                    </div>
-                </div>
-
-                
-                
+               
 
             </div>
     </section>
@@ -174,12 +182,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg">
+                        <img src="the_hunger_games.jpg">
                     </div>
                     <div class="content">
                         <h3>The hunger games</h3>
                         <div class="price">$14.99 <span>$18.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -189,12 +198,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg" alt="">
+                        <img src="the_fallen_stars.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>The fallen stars</h3>
                         <div class="price">$18.99 <span>$27.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -204,12 +214,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg" alt="">
+                        <img src="into the wild, aventur.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Into the wild</h3>
                         <div class="price">$20.99 <span>$25.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
 
@@ -220,29 +231,17 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg" alt="">
+                        <img src="criminal_mischief.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Criminal mischief</h3>
                         <div class="price">$30.00 <span>$33.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
 
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="itendswithus.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Catching Fire</h3>
-                        <div class="price">$12.99 <span>$16.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
-                    </div>
+                
                 </div>
 
             </div>
@@ -263,13 +262,16 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg">
+                        <img src="icebreaker.jpg">
                     </div>
                     <div class="content">
                         <h3>Icebreaker</h3>
                         <div class="price">$16.99 <span>$20.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
+                </div>
+                
                 </div>
                 <div class="swiper-slide box">
                     <div class="icons">
@@ -278,27 +280,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Agend 21</h3>
-                        <div class="price">$15.99 <span>$20.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="x.jpg" alt="">
+                        <img src="divergent.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Divergent</h3>
                         <div class="price">$19.99 <span>$25.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
 
@@ -309,12 +297,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg" alt="">
+                        <img src="the_sentinel.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>The sentinel</h3>
                         <div class="price">$17.00 <span>$23.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -325,12 +313,13 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="x.jpg" alt="">
+                        <img src="mockingjay.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Mockingjay</h3>
                         <div class="price">$16.99 <span>$19.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+
                     </div>
                 </div>
 
@@ -351,12 +340,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg">
+                        <img src="they_both_die_.jpg">
                     </div>
                     <div class="content">
                         <h3>They both die</h3>
                         <div class="price">$14.99 <span>$18.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -371,7 +360,7 @@
                     <div class="content">
                         <h3>Redwhite</h3>
                         <div class="price">$16.99 <span>$21.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -381,12 +370,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg" alt="">
+                        <img src="ugly_love.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Ugly love</h3>
                         <div class="price">$21.99 <span>$26.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -397,12 +386,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg" alt="">
+                        <img src="wish_you_were_here.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Wish you were here</h3>
                         <div class="price">$20.00 <span>$24.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -418,7 +407,7 @@
                     <div class="content">
                         <h3>The notebook</h3>
                         <div class="price">$14.99 <span>$19.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -445,7 +434,7 @@
                     <div class="content">
                         <h3>One hundred years</h3>
                         <div class="price">$17.99 <span>$20.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -460,7 +449,7 @@
                     <div class="content">
                         <h3>The Great Gatsby</h3>
                         <div class="price">$14.99 <span>$19.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -475,7 +464,7 @@
                     <div class="content">
                         <h3>Hamlet</h3>
                         <div class="price">$18.99 <span>$20.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -491,24 +480,11 @@
                     <div class="content">
                         <h3>The divine comedy</h3>
                         <div class="price">$20.00 <span>$23.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-search"></a>
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-eye"></a>
-                    </div>
-                    <div class="image">
-                        <img src="iliad.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>The iliad</h3>
-                        <div class="price">$20.99 <span>$24.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
-                    </div>
+                
                 </div>
 
             </div>
@@ -533,7 +509,7 @@
                     <div class="content">
                         <h3>The final empire</h3>
                         <div class="price">$13.99 <span>$16.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -543,12 +519,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg alt="">
+                        <img src="the_name_of_the_wind.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>The name of</h3>
                         <div class="price">$16.99 <span>$20.00</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
                 <div class="swiper-slide box">
@@ -558,12 +534,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg" alt="">
+                        <img src="harry_poter.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>Harry potter</h3>
                         <div class="price">$17.99 <span>$20.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -574,12 +550,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg" alt="">
+                        <img src="the_lord_of_the_rings.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>The lord of the rings</h3>
                         <div class="price">$12.00 <span>$15.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -590,12 +566,12 @@
                         <a href="#" class="fas fa-eye"></a>
                     </div>
                     <div class="image">
-                        <img src="itendswithus.jpg" alt="">
+                        <img src="the_witcher.jpg" alt="">
                     </div>
                     <div class="content">
                         <h3>The witcher</h3>
                         <div class="price">$15.00 <span>$17.99</span></div>
-           <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
+                        <a href="#" class="add-to-cart-btn" onclick="addToCart('Product Title', 19.99, 'product_image_url.jpg')">Add to Cart</a>
                     </div>
                 </div>
 
@@ -635,44 +611,9 @@
             },
         });
     </script>
-    <script>
-        function addToCart(title, price, image) {
-            // Get existing cart items from local storage
-            let cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
-    
-            // Add new product to cart
-            cartProducts.push({ title: title, price: price, image: image });
-    
-            // Save cart items to local storage
-            localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
-    
-            // Calculate and update total price
-            let totalPrice = parseFloat(localStorage.getItem('cartPrice')) || 0;
-            totalPrice += price;
-            localStorage.setItem('cartPrice', totalPrice);
-    
-            // Update cart count display
-            let cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
-            cartCount++;
-            localStorage.setItem('cartCount', cartCount);
-        }
-    </script>
-    <script>
-        function addToCart() {
-            // ส่งข้อมูลสินค้าไปยังหน้า Order
-            localStorage.setItem('cartProduct', JSON.stringify({
-                title: 'Product Title',
-                price: 19.99,
-                image: 'itendswithus.jpg' // อัพเดท URL ของภาพสินค้าตามที่คุณต้องการ
-            }));
-           
-        }
-    </script>
-    
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
     <script src="cart-functions.js"></script>
-    <script src="resetBasket.js"></script>
 
 
 </body>
